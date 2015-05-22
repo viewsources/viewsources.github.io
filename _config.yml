@@ -1,0 +1,22 @@
+# Site settings
+title: Viewsources Podcast
+subtitle: Another Podcast about Frontend Development & Design
+email: charlespeters42@gmail.com
+description: >
+  Viewsources Podcast is another podcast about front-end development and web design. We discuss the important posts and links circulating among our peers and tackle issues that we find ourselves working through day in and day out. Viewsources is hosted by Tim Evko, Charles Peters & Brad Cerasani.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://viewsourc.es" # the base hostname & protocol for your site
+twitter_username: viewsources
+github_username:  jekyll
+submissions: >
+  Want us to answer one of your questions about Front-End Development or Web Design? Because we will. Right now we'd love to help people understand JavaScript MVC applications, using SVG, working with Object Oriented CSS and Sass (especially LibSass). So if you have a question related to that, please submit it because you're amazing.
+image: /assets/dist/img/vwsrc-art.png
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude: ["node_modules", "assets/src/", "gulpfile.js", "package.json"]
+
+collections:
+  hosts:
+    output: true

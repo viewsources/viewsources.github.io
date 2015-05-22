@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% include graphtags.html %}
+  <link rel="shortcut icon" href="/assets/dist/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/dist/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7107912/704568/css/fonts.css" />
+ 
+  <link rel="stylesheet" type="text/css" href="{{ '/assets/dist/css/main.css' | prepend: site.baseurl }}">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>
+<body>
+{% include icons.svg %}

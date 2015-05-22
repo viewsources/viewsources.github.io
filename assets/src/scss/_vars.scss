@@ -1,0 +1,71 @@
+// colors
+// $blue: #5486a4;
+$offwhite: #f0f0f0;
+$black: #202020;
+$red: #d04d36;
+$blue: #147AAB;
+$bluegreen: #1d889d;
+$yellow: #ffba00;
+$ygreen: #cee89c;
+$green: #6cc034;
+$orange: #e36511;
+$purple: #834f91;
+$indigo: mix($blue, $purple, 25%);
+$fushia: #FA5E5B;
+$gray: #ccc;
+$text: #484848;
+$litegray: #bcbcbc;
+
+// dark colors
+// $dark-red: #c6432c;
+// $dark-blue: #337799;
+// $dark-yellow: #f5b300;
+// $dark-green: #5ba221;
+$dark-blue: darken($blue, 6.25%);
+
+// light colors
+$lt-blue: lighten($blue, 12.5%);
+
+
+
+
+
+// base colors
+$baseColor: $blue !default;
+$baseColorDark: $dark-blue !default;
+$baseColorLite: $lt-blue !default;
+
+
+// $baseGreenLite: #56a6b3;
+// $baseGreenDark: #6eacb6;
+// $baseGreenDarker: #557176;
+
+$baseYellow: #eee199;
+$baseGreen: #90b3b9;
+$baseGreenLite: lighten($baseGreen, 5%);
+$baseGreenDark: darken($baseGreen, 5%);
+$baseGreenDarker: darken($baseGreen, 10%);
+$bkg: #f7f7f7;
+
+
+
+// fonts
+$serif: "Georgia", Times, serif !default;
+$sans-serif: 'Gotham SSm A', 'Gotham SSm B', "Helvetica", "Helvetica Neue", Helvetica, Arial,  Verdana, sans-serif !default;
+$sans-serif_cond: Avenir, "Lucida Grande", sans-serif !default;
+$baseFontWeight: 400 !default;
+$baseFontSize: 1rem !default;
+
+// sizes
+$w: 68rem;
+
+// padding
+$padUpDown: 1.5rem;
+$padSide: 1rem;
+$padSide: .5rem;
+
+
+// transitions
+$transition-duration: 375ms !default;
+$transition-func: ease-in-out !default;
+$animation-func: ease !default;

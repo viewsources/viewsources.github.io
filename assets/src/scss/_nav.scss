@@ -1,0 +1,14 @@
+.site--nav {
+  &_list {
+    list-style: none inside;
+    text-align: left;
+    @include mq-min(tablet) { text-align: right; }
+  }
+  a {
+    color: white;
+  }
+  &_item {
+    // padding: .5rem 0;
+    // @include mq-min(tablet) { padding: .5rem 0 .125rem .5rem; }
+  }
+}

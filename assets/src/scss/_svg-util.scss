@@ -1,0 +1,35 @@
+.icon {
+  width: 2rem;
+  height: 2rem;
+  &--sm {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.fill {
+  &--yellow { fill: $baseYellow; }
+  &--offwhite { fill: $bkg; }
+  &--green { fill: $baseGreen; }
+  &--green_lite { fill: $baseGreenLite; }
+  &--green_dark { fill: $baseGreenDark; }
+  &--green_darker { fill: $baseGreenDarker; }
+}
+
+.bkg {
+  &--yellow { background: $baseYellow; }
+  &--offwhite { background: $bkg; }
+  &--green { background:  $baseGreen; }
+  &--green_lite { background: $baseGreenLite; }
+  &--green_dark { background: $baseGreenDark; }
+  &--green_darker { background: $baseGreenDarker; }
+}
+
+.c {
+  &--yellow { color: $baseYellow; }
+  &--offwhite { color: $bkg; }
+  &--green { color: $baseGreen; }
+  &--green_lite { color: $baseGreenLite; }
+  &--green_dark { color: $baseGreenDark; }
+  &--green_darker { color: $baseGreenDarker; }
+}

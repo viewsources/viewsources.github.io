@@ -1,0 +1,16 @@
+.triangle {
+ 	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+    margin: auto;
+    bottom: -1.438rem;
+    width: 0;
+    height: 0;
+    left: 0;
+    right: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-top: 1.5rem solid $baseGreen;
+	}
+}

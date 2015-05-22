@@ -1,0 +1,27 @@
+.btn {
+	background: $baseGreenDark;
+	border: 1px solid $baseGreen;
+  border-radius: 0;
+	color: white;
+	padding: 1rem 2rem;
+	font-family: $sans-serif;
+	font-size: $baseFontSize;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all 375ms linear;
+  &:hover {
+    color: mix($baseYellow, $bkg, 15%);
+    background: $baseGreenLite;
+    border-color: $baseGreenDarker;
+  }
+
+	&--player {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background: none;
+		border: 0;
+		fill: $baseGreenLite;
+	}
+}

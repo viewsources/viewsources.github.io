@@ -1,0 +1,15 @@
+.social {
+  &--link {
+    padding: .5rem;
+    color: $bkg;
+    fill: $bkg;
+    transition: all 375ms linear;
+    &:hover {
+      color: $baseYellow;
+      fill: $baseYellow;
+    }
+  }
+  &--text {
+    margin-left: .5rem;
+  }
+}

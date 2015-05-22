@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<article>
+  <header class="post--header spacer center">
+    <h1 class="w-700 caps lt-3 episode--hl post--title section--headline section--headline_center">{{ page.title }}</h1>
+    <span class="caps lt-5 w-700 meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span>
+  </header>
+  <div class="player center post--full">
+    <audio id="music" preload="none">
+      <source src="{{ page.file }}">
+    </audio>
+    <div id="audioplayer" class="flex--container episode--player items-center">
+      <button id="pButton" class="episode--player_icon episode--player_play" onclick="play()"><span class="hidden">Play or Pause</span></button>
+      <div id="timeline" class="episode--player_progress">
+        <div id="playhead" class="episode--player_head"></div>
+      </div>
+      <div class="lt-0 right episode--player_time"></div>
+    </div>
+  </div>
+
+  <div class="flex--container h-center post--full">
+    <section class="flex--child_7 post--content">
+        {{ content }}
+    </section>
+    <aside class="flex--child_3 sidebar">
+      {% include sponsor.html %}
+      <div class="sidebar--module">
+        <h3 class="caps lt-3 w-400 sidebar--hl">Other Episodes</h3>
+        <ul>
+        {% for post in site.posts limit: 3 %}
+          <li class="caps lt-2"><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    </aside>
+  </div>
+</article>

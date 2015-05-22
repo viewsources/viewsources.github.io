@@ -1,0 +1,26 @@
+// Media Queries
+
+$break-small: 31.25rem;
+$break-medium: 48rem;
+$break-large: 57.75rem;
+
+@mixin mq($media) {
+	@if $media == handhelds {
+		@media only screen and (max-width: $break-small) { @content; }
+	}
+	@else if $media == medium-screens {
+		@media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+	}
+	@else if $media == wide-screens {
+		@media only screen and (min-width: $break-large) { @content; }
+	}
+}
+
+@mixin mq-min($media) {
+	@if $media == tablet {
+		@media only screen and (min-width: $break-small + 1) { @content; }
+	}
+	@if $media == desktop {
+		@media only screen and (min-width: $break-medium + 1) { @content; }
+	}
+}

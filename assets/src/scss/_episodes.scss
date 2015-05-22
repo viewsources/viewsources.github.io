@@ -1,0 +1,51 @@
+.episode {
+  padding: 1rem 1.5rem;
+  max-width: 48rem;
+  &--hl {
+    font-size: $baseFontSize;
+    line-height: 1.7;
+    @include mq-min(tablet) { font-size: $baseFontSize * 1.5; }
+    &_sm {
+      font-size: $baseFontSize * .875;
+      line-height: 1.6;
+      @include mq-min(tablet) { font-size: $baseFontSize * 1.125; }
+    }
+  }
+  &--player {
+    width: 100%;
+    padding: 0 0 3rem;
+    &_icon {
+      flex: 1 0 3rem;
+      padding: 1.5rem;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 100%;
+      border: 1px solid $baseGreenDark;
+      max-width: 3rem;
+      min-height: 3rem;
+      margin-right: 1rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      // @include mq-min(tablet) { padding: 0; }
+      &:focus { outline: none; }
+    }
+    &_time {
+      margin-left: 1rem;
+      max-width: 8rem;
+      flex: 1 0 8rem;
+    }
+    &_head {
+      width: 1rem;
+      height: .5rem;
+      background: $baseGreenDarker;
+    }
+    &_progress {
+      flex: 8 0;
+      height: .5rem;
+      background: rgba($baseGreenDarker, .5);
+    }
+    &_play { background: url('../img/icon_play.svg') no-repeat center center / 50%; }
+    &_pause { background: url('../img/icon_pause.svg') no-repeat center center / 50%; }
+  }
+}

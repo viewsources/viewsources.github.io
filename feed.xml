@@ -1,0 +1,42 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <atom:link href="http://viewsourc.es/feed.xml" rel="self" type="application/rss+xml" />
+    <title>Viewsources Podcast</title>
+    <link>{{ site.url }}</link>
+    <language>en-us</language>
+    <copyright>© 2015 Viewsources Podcast</copyright>
+    <itunes:subtitle>{{ site.subtitle | xml_escape }}</itunes:subtitle>
+    <itunes:author>Viewsources Podcast</itunes:author>
+    <itunes:summary>{{ site.description | xml_escape }}</itunes:summary>
+    <description>{{ site.description | xml_escape }}</description>
+
+    <itunes:owner>
+      <itunes:name>Viewsources Podcast</itunes:name>
+      <itunes:email>{{ site.email }}</itunes:email>
+    </itunes:owner>
+
+    <itunes:image href="{{ site.url }}{{ site.image }}" />
+
+    <itunes:category text="Technology">
+    </itunes:category>
+    {% for post in site.posts %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <itunes:author>Viewsources Podcast</itunes:author>
+      <itunes:subtitle>A short primer on table spices</itunes:subtitle>
+      <itunes:summary><![CDATA[ {{ post.excerpt | remove: '<p>' | remove: '</p>' | xml_escape }} Find show notes and more at {{ site.url }}{{ post.url }}]]></itunes:summary>
+      <itunes:image href="{{ site.url }}{{ site.image }}" />
+      <enclosure url="{{ post.file }}" length="{{ post.bytes }}" type="audio/mpeg" />
+      <guid>{{ post.file }}</guid>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <itunes:duration>{{ post.duration }}</itunes:duration>
+    </item>
+    {% endfor %}
+  </channel>
+
+</rss>

@@ -1,0 +1,37 @@
+.host {
+  padding: 1rem;
+  @include mq-min(tablet) { max-width: 18rem; }
+  &:last-of-type { margin: 6.25rem 0 1rem; }
+  &--img {
+    border-radius: 50%;
+    padding: .25rem;
+    border: 1px solid $baseGreenLite;
+    width: 5rem;
+    height: 5rem;
+    filter: grayscale(.5);
+    margin-bottom: 1rem;
+    overflow: auto;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  &--icons {
+    &::before {
+      content: "";
+      height: 2px;
+      display: block;
+      background: $baseGreenLite;
+      width: 2rem;
+      margin: 1rem auto .25rem;
+    }
+  }
+}
+
+.hosts {
+  p { margin-bottom: .5rem; }
+  a {
+    color: $baseGreen;
+    fill: $baseGreen;
+    transition: all 375ms linear;
+    &:hover, &:focus { fill: $baseYellow; color: $baseYellow; }
+  }
+}

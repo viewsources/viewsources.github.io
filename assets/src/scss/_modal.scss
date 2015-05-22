@@ -1,0 +1,31 @@
+.modal {
+	position: fixed;
+	height: 90vh;
+	top: 5vh; bottom: 5vh; left: 0; right: 0;
+	background: $bkg;
+	width: 95%;
+	max-width: 38rem;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow:  0 0 $baseFontSize*2 0 rgba(50, 50, 50, 0.5);
+	display: none;
+	&--content {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 1.5rem 1rem 0;
+		max-width: 33rem;
+		width: 100%;
+	}
+	&--close {
+		display: block;
+		width: 100%;
+		text-align: right;
+		justify-content: flex-end;
+		font-size: $baseFontSize*2;
+		&_x { margin-left: 1rem; }
+		&_text {
+			font-size: $baseFontSize;
+			line-height: 1;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+input,textarea {
+	font-size: inherit;
+	box-sizing: border-box;
+	font-family: inherit;
+	padding: .5rem;
+	display: block;
+	margin: .5rem 0;
+	width: 100%;
+	max-width: 37.5rem;
+	border: 1px solid $baseGreen;
+	border-radius: .125rem;
+	background: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	&:focus {
+		outline-color: $baseYellow;
+	}
+}
+
+textarea { min-height: 16rem; }

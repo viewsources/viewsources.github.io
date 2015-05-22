@@ -1,0 +1,26 @@
+.hero {
+	min-height: 85vh;
+	padding: 1rem;
+	background-image: url('../img/skewed_bkg1_new.svg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center bottom;
+	@include mq(handhelds) {
+		min-height: auto !important;
+		height: 100%;
+	}
+	&--headline {
+		font-size: 1.5rem;
+		margin: 1rem 0;
+		@include mq-min(tablet) { font-size: 2rem; }
+	}
+	&--sub {
+		font-size: 1rem;
+		@include mq-min(tablet) { font-size: 1.25rem; }
+	}
+	&--episodes {
+		background-image: url('../img/skewed_bkg2_new.svg');
+		background-repeat: no-repeat;
+		background-position: -100% -15%;
+	}
+}

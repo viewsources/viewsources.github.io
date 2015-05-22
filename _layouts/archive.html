@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<section class="spacer episodes post--full post--full_sm" id="episodes">
+  <h2 class="section--headline section--headline_center w-400 caps lt-3 center">Episodes</h2>
+  {% for post in site.posts %}
+    <article class="episode">
+      <header>
+        <h1 class="w-700 caps lt-2 episode--hl_sm"><a href="{{ post.url }}">Episode {{ post.number }} - {{ post.title }}</a></h1>
+      </header>
+      {{ post.excerpt }}
+    </article>
+  {% endfor %}
+</section>

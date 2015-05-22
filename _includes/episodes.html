@@ -1,0 +1,14 @@
+
+<section class="spacer episodes hero--episodes" id="episodes">
+  <h2 class="section--headline section--headline_center w-400 caps lt-3 center">Episodes</h2>
+  <div class="flex--container v-center">
+  {% for post in site.posts limit:8 %}
+    <article class="episode">
+      <header>
+        <h1 class="w-400 caps lt-1 episode--hl"><a href="{{ post.url }}">Episode {{ post.number }} - {{ post.title }}</a></h1>
+      </header>
+      {{ post.excerpt }}
+    </article>
+  {% endfor %}
+  </div>
+</section>

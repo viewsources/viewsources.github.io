@@ -1,0 +1,19 @@
+.page {
+  max-width: 38rem;
+  // padding: 1rem;
+}
+
+.post {
+  &--full {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem;
+    &_sm {
+     max-width: 37.5rem;
+    }
+  }
+  &--content {
+    margin-bottom: 2rem;
+    @include mq-min(tablet) { padding-right: 2rem; }
+  }
+}

@@ -1,0 +1,17 @@
+.sidebar {
+  &--module {
+    border-top: 2px solid $baseGreen;
+    padding: 1.125rem 0 .875rem;
+    ul {
+      list-style: none inside;
+    }
+    li {
+      display: block;
+      margin: 0;
+      max-width: 100%;
+      padding: .25rem 0;
+      font-size: .875rem;
+    }
+  }
+  &--hl { font-size: 1.125rem; }
+}
