@@ -5,7 +5,6 @@ layout: null
 
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    <atom:link href="http://viewsourc.es/feed.xml" rel="self" type="application/rss+xml" />
     <title>Viewsources Podcast</title>
     <link>{{ site.url }}</link>
     <language>en-us</language>
