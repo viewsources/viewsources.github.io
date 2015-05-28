@@ -8,7 +8,7 @@ bytes: 150727902
 duration: '01:04:39'
 ---
 
-Tim and Charles talk about how the built the [Viewsources](https://viewsourc.es/) site and worked with performance in mind.
+Tim and Charles talk about how they built the [Viewsources](https://viewsourc.es/) site and worked with performance in mind.
 
 - [Viewsources](https://viewsourc.es/)
 - [Caddy Server](http://caddyserver.com/)
