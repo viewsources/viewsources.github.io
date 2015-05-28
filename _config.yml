@@ -6,6 +6,7 @@ description: >
   Viewsources Podcast is another podcast about front-end development and web design. We discuss the important posts and links circulating among our peers and tackle issues that we find ourselves working through day in and day out. Viewsources is hosted by Tim Evko, Charles Peters & Brad Cerasani.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://viewsourc.es/" # the base hostname & protocol for your site
+urlm: "https://viewsourc.es"
 twitter_username: viewsources
 github_username:  jekyll
 submissions: >
