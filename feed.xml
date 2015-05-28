@@ -28,7 +28,7 @@ layout: null
       <title>{{ post.title | xml_escape }}</title>
       <itunes:author>Viewsources Podcast</itunes:author>
       <itunes:subtitle>A short primer on table spices</itunes:subtitle>
-      <itunes:summary><![CDATA[ {{ post.excerpt | remove: '<p>' | remove: '</p>' | xml_escape }} Find show notes and more at {{ site.url }}{{ post.url }}]]></itunes:summary>
+      <itunes:summary><![CDATA[ {{ post.excerpt | remove: '<p>' | remove: '</p>' | xml_escape }} Find show notes and more at https://viewsourc.es{{ post.url }}]]></itunes:summary>
       <itunes:image href="{{ site.url }}{{ site.image }}" />
       <enclosure url="{{ post.file }}" length="{{ post.bytes }}" type="audio/mpeg" />
       <guid>{{ post.file }}</guid>
