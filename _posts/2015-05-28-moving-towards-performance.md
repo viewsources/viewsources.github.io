@@ -2,7 +2,7 @@
 layout: post
 number: 6
 title:  "Moving Towards Performance"
-date:   2015-04-28 16:28:29
+date:   2015-05-21 16:28:29
 file: 'https://s3.amazonaws.com/viewsources/vws-ep6-moving-toward-performance.mp3'
 bytes: 150727902
 duration: '01:04:39'
