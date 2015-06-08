@@ -1,5 +1,6 @@
 .site--nav {
   &_list {
+    max-width: 100%;
     list-style: none inside;
     text-align: left;
     @include mq-min(tablet) { text-align: right; }
@@ -9,6 +10,9 @@
   }
   &_item {
     // padding: .5rem 0;
+    margin-top: .5rem;
+    margin-right: 1rem;
+    margin-bottom: .5rem;
     // @include mq-min(tablet) { padding: .5rem 0 .125rem .5rem; }
   }
 }
