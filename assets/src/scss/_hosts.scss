@@ -1,5 +1,6 @@
 .host {
   padding: 1rem;
+  margin-top: 0;
   @include mq-min(tablet) { max-width: 18rem; }
   &--img {
     border-radius: 50%;
