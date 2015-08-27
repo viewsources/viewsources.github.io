@@ -15,7 +15,7 @@
     @for $i from 1 through 12 {
       &_#{$i} { flex: $i 0 20rem; }
       &_v#{$i} { flex: $i 0; }
-			&_sm#{$i} { flex: 0 $i 10rem; }
+      &_sm#{$i} { flex: 0 $i 10rem; }
     }
   }
 }
