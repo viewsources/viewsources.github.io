@@ -75,7 +75,7 @@ if (document.querySelector('audio') != null) {
 		}
 		var timeString = (duration / 60) + '',
 			dcml = Number('.' + timeString.split('.')[1]) * 60;
-		timeholder.innerHTML = Math.floor(music.currentTime / 60) + ':' + Math.floor(music.currentTime) % 60 + ' | ' + Math.floor(duration / 60) + ':' + Math.floor(dcml);
+		timeholder.innerHTML = Math.floor(music.currentTime / 60) + ':' + ('0' + (Math.floor(music.currentTime) % 60)).slice(-2) + ' | ' + Math.floor(duration / 60) + ':' +  ('0' + Math.floor(dcml)).slice(-2);
 	}
 
 	//Play and Pause
